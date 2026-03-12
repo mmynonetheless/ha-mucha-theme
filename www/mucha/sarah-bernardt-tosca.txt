@@ -1,0 +1,8 @@
+# Sarah Bernhardt as Tosca (1899) by Alphonse Mucha
+# Public Domain - Copyright expired
+# Source: Wellcome Library Collection
+
+This is a placeholder. To use this image:
+1. Download from: https://wellcomecollection.org/works/xyz (search "Mucha Tosca")
+2. Save as: sarah-bernardt-tosca.jpg
+3. Place in /config/www/mucha/
