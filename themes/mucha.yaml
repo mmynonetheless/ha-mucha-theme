@@ -1,0 +1,125 @@
+# Alphonse Mucha Inspired Theme for Home Assistant
+# Version 1.0.0
+# Inspired by the Art Nouveau master's pale pastels, decorative scrollwork, and ethereal beauty
+# "Le style Mucha" - 1890s Paris
+
+Mucha:
+  # ============================================================
+  # PRIMARY PALETTE - Mucha's signature pale pastels
+  # ============================================================
+  
+  # Backgrounds - Soft, muted tones like aged paper 
+  primary-background-color: "#f9f1e7"        # Pale cream - like vintage paper
+  secondary-background-color: "#f4e9db"      # Slightly warmer cream
+  card-background-color: "#fff9f2"           # Off-white with warmth
+  
+  # Text Colors - Soft and readable, not harsh
+  primary-text-color: "#5c4e3d"              # Soft brown
+  secondary-text-color: "#8a7a66"            # Muted taupe
+  text-primary-color: "#5c4e3d"              # Primary text
+  
+  # ============================================================
+  # ACCENT COLORS - Mucha's pale pastels 
+  # ============================================================
+  
+  primary-color: "#d9b8a6"                    # Pale peach - skin tones
+  accent-color: "#b6c8a7"                      # Soft sage green - foliage
+  google-blue: "#c0b9d0"                        # Lavender - Byzantine influences
+  
+  # Additional pastels
+  light-primary-color: "#eedac8"                # Lighter peach
+  dark-primary-color: "#b29e8a"                  # Deeper neutral
+  
+  # ============================================================
+  # CARD STYLES - Ornate, framed like Mucha's posters 
+  # ============================================================
+  
+  # Card borders - decorative scrollwork effect
+  ha-card-border-width: "2px"
+  ha-card-border-color: "#d9b8a6"               # Peach border
+  ha-card-box-shadow: "0 8px 16px -6px rgba(181, 154, 135, 0.2), 0 0 0 1px #eedac8 inset"
+  border-color: "#eedac8"
+  
+  # Card background with subtle floral pattern
+  card-background-image: >-
+    repeating-linear-gradient(
+      45deg,
+      rgba(217, 184, 166, 0.02) 0px,
+      rgba(217, 184, 166, 0.02) 4px,
+      transparent 4px,
+      transparent 12px
+    ),
+    radial-gradient(
+      circle at 20% 30%,
+      rgba(198, 200, 180, 0.03) 0%,
+      transparent 30%
+    )
+  
+  # Card radius - soft, organic curves like Art Nouveau 
+  ha-card-border-radius: "24px 8px 24px 8px"    # Asymmetric like flowing lines
+  
+  # ============================================================
+  # SIDEBAR - Elegant and light, like Mucha's decorative panels 
+  # ============================================================
+  
+  sidebar-background-color: "#f4e9db"            # Warm cream
+  sidebar-text-color: "#5c4e3d"                  # Soft brown
+  sidebar-selected-background-color: "#eedac8"    # Peach tint for selection
+  sidebar-selected-text-color: "#b29e8a"          # Deeper neutral
+  sidebar-icon-color: "#b6c8a7"                    # Sage green icons
+  
+  # ============================================================
+  # HEADER - Byzantine halo effect 
+  # ============================================================
+  
+  app-header-background-color: "#fff9f2"          # Off-white
+  app-header-text-color: "#b6c8a7"                # Sage green
+  header-height: "56px"
+  
+  # ============================================================
+  # BUTTONS & CONTROLS - Floral and organic 
+  # ============================================================
+  
+  # Primary buttons - soft peach
+  primary-color: "#d9b8a6"
+  
+  # Toggle buttons - inspired by Mucha's jewelry designs 
+  paper-toggle-button-checked-button-color: "#b6c8a7"
+  paper-toggle-button-checked-bar-color: "#b6c8a740"
+  paper-toggle-button-unchecked-button-color: "#eedac8"
+  paper-toggle-button-unchecked-bar-color: "#eedac840"
+  
+  # Sliders - flowing lines like Mucha's scrollwork 
+  paper-slider-active-color: "#c0b9d0"            # Lavender
+  paper-slider-secondary-color: "#d9b8a6"          # Peach
+  paper-slider-knob-color: "#c0b9d0"               # Lavender
+  paper-slider-pin-color: "#c0b9d0"                # Lavender
+  
+  # ============================================================
+  # CHART COLORS - Mucha's palette 
+  # ============================================================
+  
+  graph-color-1: "#b6c8a7"    # Sage green (foliage)
+  graph-color-2: "#c0b9d0"    # Lavender (Byzantine)
+  graph-color-3: "#d9b8a6"    # Peach (skin tones)
+  graph-color-4: "#e2c9b3"    # Warm sand
+  graph-color-5: "#b29e8a"    # Taupe
+  
+  # ============================================================
+  # STATE COLORS - Mucha's ethereal quality 
+  # ============================================================
+  
+  state-icon-color: "#b6c8a7"                        # Sage (calm)
+  state-icon-active-color: "#c0b9d0"                  # Lavender (divine)
+  
+  # Warning/Error states - soft, not harsh
+  error-color: "#e2b6b0"                              # Soft pink-coral
+  warning-color: "#eedac8"                             # Peach
+  success-color: "#b6c8a7"                             # Sage
+  info-color: "#c0b9d0"                                # Lavender
+  
+  # ============================================================
+  # LIGHT STATES - Warm, golden hour light 
+  # ============================================================
+  
+  light-color-temperature: "3000K"                    # Warm, soft light
