@@ -1,0 +1,8 @@
+{
+  "name": "Mucha Art Nouveau Theme",
+  "render_readme": true,
+  "homeassistant": "2023.8.0",
+  "persistent_directory": "www/mucha",
+  "country": ["FR", "CZ", "US", "GB"],
+  "filename": "themes/mucha.yaml"
+}
