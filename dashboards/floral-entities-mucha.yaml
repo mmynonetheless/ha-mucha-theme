@@ -1,0 +1,54 @@
+# Mucha Floral Entities Card - Inspired by "Language of Flowers"
+
+type: custom:better-minimalistic-area-card
+title: "Les Fleurs"
+area: living_room
+image: /local/mucha/floral-pattern.jpg
+shadow: true
+darken_image: true
+state_color: true
+style: |
+  ha-card {
+    background: linear-gradient(135deg, #f9f1e7, #f4e9db);
+    border: 2px solid #eedac8;
+    border-radius: 32px 8px 32px 8px;
+    font-family: "Cormorant Garamond", serif;
+    box-shadow: 0 12px 28px -8px rgba(0,0,0,0.2);
+    animation: soft-glow 6s ease-in-out infinite;
+  }
+  .mucha-floral-corner::before,
+  .mucha-floral-corner::after {
+    content: "⚜";
+    position: absolute;
+    font-size: 32px;
+    color: #b6c8a7;
+    opacity: 0.3;
+  }
+  .mucha-floral-corner::before {
+    top: 10px;
+    left: 10px;
+    transform: rotate(-15deg);
+  }
+  .mucha-floral-corner::after {
+    bottom: 10px;
+    right: 10px;
+    transform: rotate(15deg);
+  }
+
+entities:
+  - entity: light.living_room
+    name: "Lumière du Salon"
+    icon: mdi:lightbulb-outline
+  - entity: fan.living_room
+    name: "Brise d'Été"
+    icon: mdi:fan
+  - entity: sensor.temperature_living_room
+    name: "Température"
+    color: "#b6c8a7"
+  - entity: sensor.humidity_living_room
+    name: "Humidité"
+    color: "#c0b9d0"
+  - entity: switch.essential_oil_diffuser
+    name: "Parfum"
+    icon: mdi:flower
+    state_color: true
