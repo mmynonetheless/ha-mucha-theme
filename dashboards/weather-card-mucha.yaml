@@ -1,0 +1,50 @@
+# Mucha-Inspired Weather Card - "The Seasons" Series
+# Requires: Season integration [citation:2]
+# Based on weather-card component [citation:8]
+
+type: vertical-stack
+cards:
+  - type: picture
+    image: >-
+      {% set season = states('sensor.season') | lower %}
+      /local/mucha/seasons/{{ season }}.jpg
+    style: |
+      ha-card {
+        border: 3px solid #eedac8;
+        border-radius: 32px 8px 32px 8px;
+        overflow: hidden;
+        box-shadow: 0 12px 24px -8px rgba(0,0,0,0.2);
+        animation: soft-glow 4s ease-in-out infinite;
+      }
+  
+  - type: custom:weather-card
+    entity: weather.home
+    name: "Les Saisons"
+    backdrop:
+      day: "#f9f1e7"
+      night: "#f4e9db"
+    primary_info:
+      - temperature
+      - condition
+    secondary_info:
+      - humidity
+      - wind_speed
+    style: |
+      ha-card {
+        background: rgba(255, 249, 242, 0.9);
+        border: 2px solid #d9b8a6;
+        border-radius: 16px 4px 16px 4px;
+        margin-top: -20px;
+        position: relative;
+        z-index: 10;
+        font-family: "Cormorant Garamond", serif;
+      }
+      .mucha-floral-corner::before {
+        content: "⚜";
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        font-size: 24px;
+        color: #b6c8a7;
+        opacity: 0.5;
+      }
