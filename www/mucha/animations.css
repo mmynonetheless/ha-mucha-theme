@@ -1,0 +1,110 @@
+/* Mucha-Inspired CSS Animations for Home Assistant */
+/* Flowing, organic movements like Art Nouveau scrollwork */
+
+@keyframes float {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(0.5deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+@keyframes gentle-sway {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(1deg); }
+  75% { transform: rotate(-1deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes soft-glow {
+  0% { box-shadow: 0 0 5px rgba(192, 185, 208, 0.3); }
+  50% { box-shadow: 0 0 20px rgba(192, 185, 208, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(192, 185, 208, 0.3); }
+}
+
+@keyframes petal-fall {
+  0% { 
+    transform: translateY(-10px) rotate(0deg);
+    opacity: 0;
+  }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { 
+    transform: translateY(10px) rotate(10deg);
+    opacity: 0;
+  }
+}
+
+@keyframes arabesque-flow {
+  0% { stroke-dashoffset: 1000; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.mucha-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.mucha-sway {
+  animation: gentle-sway 8s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+.mucha-glow {
+  animation: soft-glow 4s ease-in-out infinite;
+}
+
+.mucha-card {
+  transition: all 0.3s ease;
+  border: 2px solid #eedac8;
+  border-radius: 24px 8px 24px 8px;
+  background: #fff9f2;
+  box-shadow: 0 4px 12px rgba(181, 154, 135, 0.15);
+}
+
+.mucha-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(181, 154, 135, 0.25);
+}
+
+/* Floral corner decoration */
+.mucha-floral-corner {
+  position: relative;
+  overflow: hidden;
+}
+
+.mucha-floral-corner::before {
+  content: "✧";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  font-size: 40px;
+  color: #d9b8a6;
+  opacity: 0.3;
+  transform: rotate(-15deg);
+}
+
+.mucha-floral-corner::after {
+  content: "✧";
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  font-size: 40px;
+  color: #d9b8a6;
+  opacity: 0.3;
+  transform: rotate(15deg);
+}
+
+/* Byzantine halo effect */
+.mucha-halo {
+  background: radial-gradient(ellipse at 50% 30%, rgba(192, 185, 208, 0.15) 0%, transparent 70%);
+}
+
+/* Decorative vine border */
+.mucha-vine-border {
+  border-image: repeating-linear-gradient(45deg, #eedac8 0px, #eedac8 4px, transparent 4px, transparent 12px) 30;
+  border-width: 2px;
+  border-style: solid;
+}
+
+/* Pastel sky gradient */
+.mucha-sky {
+  background: linear-gradient(135deg, #f9f1e7 0%, #f4e9db 50%, #fff9f2 100%);
+}
